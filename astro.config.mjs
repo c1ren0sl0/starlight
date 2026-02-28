@@ -6,19 +6,30 @@ import starlight from '@astrojs/starlight';
 export default defineConfig({
 	integrations: [
 		starlight({
-			title: 'My Docs',
-			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/withastro/starlight' }],
+			title: '6point.co',
 			sidebar: [
 				{
-					label: 'Guides',
+					label: 'Perspectives',
 					items: [
-						{ label: 'Example Guide', slug: 'guides/example' },
-						{ label: '6point.co', slug: 'guides/6pointco' },
+						{ label: 'Imperatives', slug: 'perspectives/imperatives' },
+						{ label: 'Technology', slug: 'perspectives/technology' },
+						{ label: 'Practices', slug: 'perspectives/practices' },
+						{ label: 'Enterprise', slug: 'perspectives/enterprise' },
+						{ label: 'Industry', slug: 'perspectives/industry' },
+						{ label: 'Forces', slug: 'perspectives/forces' },
 					],
 				},
 				{
-					label: 'Reference',
-					autogenerate: { directory: 'reference' },
+					label: 'Resources',
+					items: [
+						{ label: 'Overview', slug: 'resources' },
+					],
+				},
+				{
+					label: 'Approach',
+					items: [
+						{ label: 'How We Think', slug: 'approach' },
+					],
 				},
 			],
 		}),
